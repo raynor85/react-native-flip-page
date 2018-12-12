@@ -1,27 +1,17 @@
 import MatrixMath from 'react-native/Libraries/Utilities/MatrixMath';
 
-const rotateX = (deg) => {
+const rotateX = deg => {
   const rad = (Math.PI / 180) * deg;
   const cos = Math.cos(rad);
   const sin = Math.sin(rad);
-  return [
-    1, 0, 0, 0,
-    0, cos, -sin, 0,
-    0, sin, cos, 0,
-    0, 0, 0, 1,
-  ];
+  return [1, 0, 0, 0, 0, cos, -sin, 0, 0, sin, cos, 0, 0, 0, 0, 1];
 };
 
-const rotateY = (deg) => {
+const rotateY = deg => {
   const rad = (Math.PI / 180) * deg;
   const cos = Math.cos(rad);
   const sin = Math.sin(rad);
-  return [
-    cos, 0, sin, 0,
-    0, 1, 0, 0,
-    -sin, 0, cos, 0,
-    0, 0, 0, 1,
-  ];
+  return [cos, 0, sin, 0, 0, 1, 0, 0, -sin, 0, cos, 0, 0, 0, 0, 1];
 };
 
 const transformOrigin = (matrix, origin) => {
@@ -36,8 +26,4 @@ const transformOrigin = (matrix, origin) => {
   MatrixMath.multiplyInto(matrix, matrix, untranslate);
 };
 
-export {
-  rotateX,
-  rotateY,
-  transformOrigin,
-};
+export { rotateX, rotateY, transformOrigin };

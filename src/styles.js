@@ -2,43 +2,43 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1
   },
   page: {
     position: 'absolute',
     left: 0,
     top: 0,
     width: '100%',
-    height: '100%',
+    height: '100%'
   },
   half: {
     position: 'absolute',
     left: 0,
     top: 0,
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   verticalHalf: {
     height: '50%',
-    width: '100%',
+    width: '100%'
   },
   horizontalHalf: {
     height: '100%',
-    width: '50%',
+    width: '50%'
   },
   under: {
-    backgroundColor: '#000',
+    backgroundColor: '#000'
   },
   verticalFirstHalf: {
-    top: 0,
+    top: 0
   },
   verticalSecondHalf: {
-    top: '50%',
+    top: '50%'
   },
   horizontalFirstHalf: {
-    left: 0,
+    left: 0
   },
   horizontalSecondHalf: {
-    left: '50%',
+    left: '50%'
   },
   shadow: {
     backgroundColor: 'rgba(0,0,0,0.5)',
@@ -46,6 +46,6 @@ export default StyleSheet.create({
     left: 0,
     position: 'absolute',
     top: 0,
-    width: '100%',
-  },
+    width: '100%'
+  }
 });
