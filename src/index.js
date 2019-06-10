@@ -367,8 +367,8 @@ class FlipPage extends React.Component {
         {...this.panResponder.panHandlers}
         onLayout={this.onLayout}
       >
-        {this.state.halfWidth &&
-          this.state.halfHeight &&
+        {!!this.state.halfWidth &&
+          !!this.state.halfHeight &&
           children
             .slice(from, to)
             .map((component, index) =>
